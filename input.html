@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Countdown</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="heart-container">
+      <div class="heart"></div>
+    </div>
+    <div class="text-container">
+      <label class="text-container__input" for="inputDate">
+        When are we meeting again?
+      </label>
+      <input type="date" id="inputDate" placeholder="YYYY-MM-DD" />
+      <button class="text-container__button" onclick="setCountdown()">
+        Set Countdown
+      </button>
+    </div>
+
+    <script src="scripts/inputScript.js"></script>
+  </body>
+</html>

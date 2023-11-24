@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "KdamThmorPro";
+  src: url("fonts/KdamThmorPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: box-model;
+}
+
+body {
+  font-family: "KdamThmorPro", sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(251, 148, 237);
+  color: white;
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.clock {
+  font-size: 150px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-grid {
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+}
+
+.clock-grid div:first-child {
+  margin-right: 35px;
+}
+
+.clock-grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#days,
+#hours,
+#mins,
+#secs,
+#two-points {
+  font-size: 150px;
+}
+
+button {
+  font-family: inherit;
+}
+
+.heart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  left: -190px;
+  z-index: -1;
+}
+
+.heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  filter: blur(20px);
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 395px;
+  border-radius: 150px 150px 0 0;
+  background: rgb(255, 89, 89);
+}
+
+.heart::before {
+  left: 240px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.button-container {
+  display: flex;
+  padding: 10px;
+}
+
+.button-container button {
+  font-size: 20px;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+input[type="date"] {
+  background: transparent;
+  padding: 10px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.text-container__input {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.text-container__button {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.finish-message p {
+  font-size: 40px;
+}
