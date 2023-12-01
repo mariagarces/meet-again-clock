@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // If there is no saved date, set a new one (e.g., 7 days from now)
   if (!savedDate) {
-    // Redirect to input page to set a new countdown date
-    backToInputPage();
+    // Redirect to index page to set a new countdown date
+    backToIndexPage();
   } else {
     // Display the countdown clock using the saved date
     displayCountdown(savedDate);
@@ -91,9 +91,9 @@ function formatWithTimezone(dateString) {
   return formattedDate;
 }
 
-// Function to redirect to the input page
-function backToInputPage() {
-  window.location.href = "input.html"; // Redirect to the input page
+// Function to redirect to the index page
+function backToIndexPage() {
+  window.location.href = "index.html"; // Redirect to the index page
 }
 
 // Function to pad a number with zero if it is less than 10

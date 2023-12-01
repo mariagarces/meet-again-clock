@@ -38,10 +38,6 @@ p {
   grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
 }
 
-.clock-grid div:first-child {
-  margin-right: 35px;
-}
-
 .clock-grid div {
   display: flex;
   flex-direction: column;
